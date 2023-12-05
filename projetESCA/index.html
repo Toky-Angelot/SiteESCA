@@ -50,7 +50,7 @@
                 </ul>
                 <div class="header-content">
                     <h4 class="header-subtitle">Ametur Cor Jesu</h4>
-                    <h1 class="header-title">Mt 2,5</h1>
+                    <h2 class="header-title">Mt 2,5</h2>
                     <h6 class="header-mono">Fa ny fitiavana no lehibe indrindra</h6>
                 </div>
             </div>
@@ -101,7 +101,7 @@
 
     <!-- Start ESCA Actuality -->
     <section class="section bg-custom-gray">
-        <div class="container text-center">
+        <div class="container text-center" id="actualite">
             <h1 class="mb-5"><span class="text-danger"></span> Actualité</h1>
             <!-- <h6 class="section-title mb-5">Lien sur la page Facebook</h6>
                  -->
@@ -449,7 +449,7 @@
                             <div class="m-auto"><img src="assets/imgs/logo/icons8_confetti_64.png" alt=""></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">85<sup>ème</sup></h1>
+                            <h2 class="text-danger font-weight-bold font40">85<sup>ème</sup></h2>
                             <p class="text-light mb-1">Anniversaire</p>
                         </div>
                     </div>
@@ -460,7 +460,7 @@
                             <div class="m-auto"><img src="assets/imgs/logo/icons8_building_64.png" alt=""></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">4</h1>
+                            <h2 class="text-danger font-weight-bold font40">4</h2>
                             <p class="text-light mb-1">Batiments</p>
                         </div>
                     </div>
@@ -471,7 +471,7 @@
                             <div class="m-auto"><img src="assets/imgs/logo/icons8_Students_64.png" alt=""></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">+ 3000</h1>
+                            <h2 class="text-danger font-weight-bold font40">+ 3000</h2>
                             <p class="text-light mb-1">Elèves</p>
                         </div>
                     </div>
@@ -482,7 +482,7 @@
                             <div class="m-auto"><img src="assets/imgs/logo/icons8_graduate_64.png" alt=""></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">93%</h1>
+                            <h2 class="text-danger font-weight-bold font40">93%</h2>
                             <p class="text-light mb-1">Résultats des examens</p>
                         </div>
                     </div>
@@ -639,8 +639,6 @@
 
 
 
-    <div class="spinner-border" id="carte"></div>
-    <div class="spinner-grow"></div>
 
 
     <!-- Start contact -->
@@ -651,15 +649,15 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Envoyer votre message</h4>
-                        <form action="">
+                        <form action="fonction/traitement_formulaire.php" method="POST">
                             <div class="form-group">
-                                <input class="form-control" type="text" placeholder="Nom *" required>
+                                <input class="form-control" type="text" placeholder="Nom *" name="nom" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
+                                <input class="form-control" type="email" placeholder="Email *" name="email" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" placeholder=" Message *" rows="7" required></textarea>
+                                <textarea class="form-control" placeholder=" Message *" rows="7" name="message" required></textarea>
                             </div>
                             <div class="form-group ">
                                 <button type="submit" class="form-control btn btn-primary">Envoyer message</button>
@@ -721,12 +719,26 @@
 
     <footer class="footer py-3">
         <div class="container">
-            <p class="small mb-0 text-light">
-                &copy;
-                <script>document.write(new Date().getFullYear())</script> Créer <i class="ti-heart text-danger"></i> par
-                <a href="http://devcrud.com" target="_blank"><span class="text-danger"
-                        title="Bootstrap 4 Themes and Dashboards">Toky Angelot</span></a>
-            </p>
+            <div>
+                <ul>
+                    <li><b>Association</b></li>
+                    <li>AMAESCA</li>
+                    <li>APEL</li>
+                    <li>AGE</li>
+                    <li>APSCA</li>
+                </ul>
+            </div>
+
+            <div> 
+                <ul>
+                    <li><b>Partenaires</b></li>
+                    <li> <a href="https://essca.mg/">ESSCA</a></li>
+                    <li> <a href="http://www.coindre.org/FR/accueil/index_fr.html"> CONGREGATION DU FRERE DU SACRE COEUR DANS LE MONDE</a></li>
+                    <li> <a href="https://www.fondazionecristore.org/"> FONDAZIONE CRISTO RE</a></li>
+                    <li> <a href="https://fondationorange.com/fr"> Fondation ORANGE</a></li>
+                </ul>
+
+            </div>
         </div>
     </footer>
 

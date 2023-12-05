@@ -44,7 +44,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, figure, header, hgroup, main, nav, section {
   display: block;
 }
 
@@ -57,8 +57,9 @@ body {
   color: #212529;
   text-align: left;
   overflow-x: hidden;
-  /* background-repeat: no-repeat;
-  animation: fondBody 5s linear infinite; */
+  /* background-image: url(../imgs/Web\ 1920\ –\ 2.png); */
+  background-repeat: no-repeat;
+  /*  animation: fondBody 5s linear infinite; */
 }
 
 /* @keyframes fondBody {
@@ -123,6 +124,12 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+
+h1{
+  margin-top: 1em;
+  font-size: 4em !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 }
 
 p {
@@ -556,6 +563,10 @@ code {
   font-size: 87.5%;
   color: #FC8BC0;
   word-break: break-word;
+}
+
+li{
+  list-style: none;
 }
 
 a > code {
@@ -10270,6 +10281,20 @@ p {
 
 .footer {
   background: #17263C;
+  display: flex;
+  color: white;
+}
+
+.footer .container{
+  display: flex;
+}
+
+.footer .container a{
+  color: white;
+}
+
+.footer .container a:hover{
+  color: #f51330;
 }
 
 .black{
@@ -10305,7 +10330,6 @@ p {
     background-image: url(../imgs/Mausolee.jpg);
   }
 }
-
 
 
 .header .container {
@@ -10531,9 +10555,9 @@ p {
 /* Blog Style */
 
 #blog {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 200px;
 }
 
 #blog .tabs {
@@ -10542,7 +10566,7 @@ p {
   padding: 0px;
   height: 90px;
   width: 100%;
-  background-color: #eee;
+  /* background-color: #eee; */
   border-bottom: 10px solid #289A48;
 }
 
@@ -10583,7 +10607,7 @@ p {
 }
 
 .tabgroup {
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   padding: 20px 30px;
 }
 
