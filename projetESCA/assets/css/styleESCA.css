@@ -56,8 +56,30 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  overflow-x: hidden;
+  /* background-repeat: no-repeat;
+  animation: fondBody 5s linear infinite; */
 }
+
+/* @keyframes fondBody {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(25px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-25px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+} */
+
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -10372,7 +10394,7 @@ p {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .section.bg-custom-gray {
@@ -10455,10 +10477,55 @@ p {
   margin-top: 10px;
 }
 
+#fadeIn{
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out
+  /* animation: fadeIn 2s; */
+}
+#fadeIn.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+#fadeIn1{
+  opacity: 0;
+  transform: translateX(300px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out
+  /* animation: fadeIn 2s; */
+}
+#fadeIn1.visible1{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#fadeIn2{
+  opacity: 0;
+  transform: translateX(300px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out
+  /* animation: fadeIn 2s; */
+}
+#fadeIn2.visible2{
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
 
 
+/*
+
+@keyframes fadeIn{
+  0%{
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+} */
 
 
 /* Blog Style */
@@ -10582,7 +10649,13 @@ p {
 
 
 
-
+#blog_be{
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/batiment.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 
 
@@ -10773,19 +10846,7 @@ p {
   overflow: hidden;
   margin-bottom: 30px;
   display: block;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; */
-
 }
-
-/* .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-} */
 
 .gallery-image {
   cursor: pointer;
@@ -10813,8 +10874,8 @@ p {
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 50px;
+  right: 50px;
   color: white;
   font-size: 20px;
   cursor: pointer;
@@ -10840,6 +10901,7 @@ p {
   -webkit-transition: all, 0.4s;
   transition: all, 0.4s;
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   .img-wrapper .overlay {
@@ -10942,4 +11004,36 @@ p {
   .overlay .subtitle {
     margin-top: 0;
   }
+}
+
+
+::-webkit-scrollbar {
+  width: 8px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #289A48; /* Couleur de la poignée de la barre de défilement */
+  border-radius: 5px; /* Bordure arrondie de la poignée */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ajouter une ombre à la poignée */
+
+}
+
+/* Barre de défilement pour Firefox */
+::-moz-scrollbar {
+  width: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #289A48;
+  border-radius: 5px;
+}
+
+/* Barre de défilement pour Internet Explorer */
+::-ms-scrollbar {
+  width: 10px;
+}
+
+::-ms-scrollbar-thumb {
+  background-color: #289A48;
+  border-radius: 5px;
 }

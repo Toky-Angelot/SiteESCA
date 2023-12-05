@@ -1,4 +1,7 @@
 
+
+
+
 .price-card {
     padding: 30px;
     border: 1px solid #dee2e6;
@@ -33,7 +36,7 @@
   }
   
   .price-card .price-card-cost .date:before {
-    content: '/';
+    content: '';
     padding-right: 2px;
   }
   
@@ -72,3 +75,12 @@
   .price-card.price-card-requried .num {
     color: #289A48;
   }
+
+  .img-hover{
+    border-radius: 10px;
+  }
+
+.img-hover:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
