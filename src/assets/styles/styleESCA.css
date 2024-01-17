@@ -57,8 +57,10 @@ body {
   color: #212529;
   text-align: left;
   overflow-x: hidden;
-  /* background-image: url(../imgs/Web\ 1920\ –\ 2.png); */
+  /* background-image: url(../imagesnpm/6072052_3125472.jpg); */
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   /*  animation: fondBody 5s linear infinite; */
 }
 
@@ -10287,6 +10289,8 @@ p {
 
 .footer .container{
   display: flex;
+  padding: 20px 0;
+
 }
 
 .footer .container a{
@@ -10318,16 +10322,16 @@ p {
 
 @keyframes changeBackground {
   0%, 100%{
-    background-image: url(../imgs/Fond.jpg);
+    background-image: url(../images/Fond.jpg);
   }
   25% {
-    background-image: url(../imgs/Mausolee.jpg);
+    background-image: url(../images/Mausolee.jpg);
   }
   50% {
-    background-image: url(../imgs/Fond.jpg);
+    background-image: url(../images/Fond.jpg);
   }
   75% {
-    background-image: url(../imgs/Mausolee.jpg);
+    background-image: url(../images/Mausolee.jpg);
   }
 }
 
@@ -10461,6 +10465,7 @@ p {
     padding: 300px 0 0;
   }
   .contact .contact-form-card {
+
     border-bottom: 1px solid #dee2e6;
   }
   .contact .contact-form-card,
@@ -10480,7 +10485,7 @@ p {
 .contact .contact-form-card,
 .contact .contact-info-card {
   padding: 35px;
-  background: #fff;
+  /* background: #fff; */
   min-height: 500px;
 }
 
@@ -10674,7 +10679,7 @@ p {
 
 
 #blog_be{
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/batiment.jpg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/batiment.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10797,7 +10802,7 @@ p {
 
 #featured .item .text-content {
   padding-top: 20px;
-  background-color: #fff;
+  /* background-color: #fff; */
   position: relative;
   z-index: 10;
 }
